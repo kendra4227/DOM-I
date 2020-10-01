@@ -48,6 +48,20 @@ for (let i = 0; i < nav.length; i++){
   nav[i].style.color = "green";
 }
 
+//Prepend
+const newNav = document.createElement("a");
+const newText = document.createTextNode("new Nav");
+newNav.prepend(newText);
+newNav.style.color="green";
+document.querySelector('nav').prepend(newNav);
+
+//Append
+const newNavAgain = document.createElement("a");
+const newTextAgain = document.createTextNode("new Nav");
+newNavAgain.append(newTextAgain);
+newNavAgain.style.color="green";
+document.querySelector('nav').append(newNavAgain);
+
 //Title 
 const cta= document.querySelector('h1')
 cta.textContent = siteContent["cta"]["h1"];
